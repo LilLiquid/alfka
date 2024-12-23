@@ -1,1 +1,159 @@
-            Status: Working :DD <!-- Green color indicating working status -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfasploit</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: rgba(255, 255, 255, 0.39); /* RGBA for white with 100 alpha */
+            color: #000;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.5rem;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            animation: fadeIn 4s ease-in-out;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #333;
+            animation: fadeIn 5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animate-text {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;  /* Adjust the width to make it smaller */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .btn img {
+            width: 25px; /* Adjust the size of the icons */
+            margin-right: 10px; /* Space between icon and text */
+        }
+
+        /* Status styling */
+        .status {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            font-weight: bold;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .status.down {
+            color: red;  /* Red color for Down status */
+        }
+
+        .status.working {
+            color: green;  /* Green color for Working status */
+        }
+    </style>
+</head>
+<body>
+    <img src="https://cdn.discordapp.com/attachments/1317943491820519476/1320891630340931666/freepik__modern-style-detailled-illustration-a-young-white-__69699.jpeg?ex=676b3fb1&is=6769ee31&hm=a1b3380335ca4c25a9f6c581ff572146ab196586f6331d460fa76ca3934dea6d&" alt="Logo" class="logo">
+    <div class="container">
+        <h1 class="animate-text">Alfasploit</h1>
+        <ul>
+            <li>93% unc & lvl 7</li>
+            <li>Always working! auto updates</li>
+            <li>Enhanced security and performance</li>
+        </ul>
+        <!-- Status messages -->
+        <div class="status down">
+            Status: Down :(( <!-- Red color indicating down status -->
+        </div>
+        <div class="status working">
+
+        </div>
+        <div class="btn-container">
+            <a href="https://discord.com" class="btn">
+                <img src="https://cdn.discordapp.com/attachments/1317943491820519476/1320894593985679441/discord-logo-icons-editorial-collection-free-vector-removebg-preview.png?ex=676b4274&is=6769f0f4&hm=f5d0784645f384236296b3cf50ed12291b11f0b7093ec10153f9c7e47bd7e685&" alt="Discord Logo">
+                Join on Discord
+            </a>
+            <a href="https://example.com/download" class="btn">
+                <img src="https://cdn.discordapp.com/attachments/1317943491820519476/1320894594195525723/download_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png?ex=676b4274&is=6769f0f4&hm=7b2708f236abef079176d589ca3e3fc990b34fb8cb0af68204d75708ba7b9898&" alt="Download Icon">
+                Download
+            </a>
+        </div>
+        <div class="footer">Are you bored of playing fair? install alfasploit!.</div>
+    </div>
+</body>
+</html>
